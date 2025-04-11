@@ -2,6 +2,8 @@
 
 A minimal, secure note-taking application for Android with panic button support.
 
+![Build Status](https://github.com/USERNAME/SafeNote/actions/workflows/build.yml/badge.svg)
+
 ## Features
 
 - Simple, distraction-free note editor
@@ -18,6 +20,12 @@ A minimal, secure note-taking application for Android with panic button support.
 - Panic button support to quickly erase all notes
 - No cloud backup or sync
 - No screenshots or recent apps preview
+
+## Download
+
+You can download the latest APK from:
+- [Latest Release](https://github.com/koyuawsmbrtn/SafeNote/releases/latest)
+- [Build Artifacts](https://github.com/koyuawsmbrtn/SafeNote/actions) (requires GitHub login)
 
 ## Building
 
