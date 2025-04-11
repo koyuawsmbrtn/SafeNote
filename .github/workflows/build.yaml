@@ -32,11 +32,3 @@ jobs:
         with:
           name: SafeNote-debug
           path: app/build/outputs/apk/debug/app-debug.apk
-          
-      - name: Upload APK to release
-        if: github.event_name == 'release'
-        uses: softprops/action-gh-release@v1
-        with:
-          files: app/build/outputs/apk/debug/app-debug.apk
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
