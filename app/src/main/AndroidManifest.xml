@@ -2,7 +2,7 @@
     package="space.koyu.safenote">
 
     <application
-        android:label="SafeNoteApp"
+        android:label="SafeNote"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:icon="@mipmap/ic_launcher"
         android:versionCode="1"
