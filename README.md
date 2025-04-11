@@ -2,7 +2,7 @@
 
 A minimal, secure note-taking application for Android with panic button support.
 
-![Build Status](https://github.com/USERNAME/SafeNote/actions/workflows/build.yml/badge.svg)
+![Build Status](https://github.com/koyuawsmbrtn/SafeNote/actions/workflows/build.yml/badge.svg)
 
 ## Features
 
