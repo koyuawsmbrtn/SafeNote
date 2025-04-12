@@ -100,16 +100,10 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-            saveNote(s.toString());
-            noteField.post(() -> {
-                noteField.setSelection(noteField.getText().length());
-                noteField.requestFocus();
-                noteField.setSelection(noteField.getText().length());
-                noteField.setCursorVisible(true);
-            });
-            scrollView.post(() -> {
-                scrollView.scrollTo(0, noteField.getBottom());
-            });
+                saveNote(s.toString());
+                scrollView.post(() -> {
+                    scrollView.scrollTo(0, noteField.getBottom());
+                });
             }
 
             @Override

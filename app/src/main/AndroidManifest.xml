@@ -4,9 +4,7 @@
     <application
         android:label="SafeNote"
         android:theme="@style/Theme.AppCompat.NoActionBar"
-        android:icon="@mipmap/ic_launcher"
-        android:versionCode="2"
-        android:versionName="1.1.0">
+        android:icon="@mipmap/ic_launcher">
         <activity android:name="space.koyu.safenote.MainActivity"
             android:exported="true">
             <intent-filter>
