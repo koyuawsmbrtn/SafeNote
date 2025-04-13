@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         // Create and configure the EditText
-        IncognitoEditText noteField = new IncognitoEditText(this);
+        noteField = new IncognitoEditText(this);
         noteField.setBackgroundColor(0xFF000000);
         noteField.setTextColor(0xFFFFFFFF);
         noteField.setTypeface(Typeface.MONOSPACE);
