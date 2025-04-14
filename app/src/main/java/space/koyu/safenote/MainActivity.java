@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(rootLayout);
 
-        noteField.requestFocus();
         noteField.setImeOptions(EditorInfo.IME_FLAG_NO_EXTRACT_UI);
 
         rootLayout.setOnClickListener(v -> {
