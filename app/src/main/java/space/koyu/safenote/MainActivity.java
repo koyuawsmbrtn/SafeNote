@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(0xFF000000); // Set the navigation bar color to black
+        }
+
         // Create and configure the EditText
         noteField = new IncognitoEditText(this);
         noteField.setBackgroundColor(0xFF000000);
@@ -108,6 +112,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(android.text.Editable s) {}
+        });
+
+        // Hide the cursor when the keyboard is not visible
+        androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(noteField, (v, insets) -> {
+            int keyboardHeight = insets.getInsets(androidx.core.view.WindowInsetsCompat.Type.ime()).bottom;
+            noteField.setCursorVisible(keyboardHeight > 0); // Show cursor only when keyboard is visible
+            return insets;
         });
     }
 
